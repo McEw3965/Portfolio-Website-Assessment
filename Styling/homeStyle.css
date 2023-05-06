@@ -1,5 +1,7 @@
 body {
     width: 960px;
+    height: 740px;
+    overflow:hidden;
     background-color: #fbf3f2;
     color:#032539;
     font-family: Arial, Helvetica, sans-serif;
@@ -32,17 +34,17 @@ main {
 }
 
 #slide1 {
-    background-image: url(../Media/calne.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../Media/calne.png);
     animation-delay: 0s;
 }
 
 #slide2 {
-    background-image: url(../Media/Bitsy\ Game\ ScreenShot.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../Media/Bitsy\ Game\ ScreenShot.jpg);
     animation-delay: -7s;
 }
 
 #slide3 {
-    background-image: url(../Media/bathSpaUni.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../Media/bathSpaUni.jpg);
     animation-delay: -14s;
 }
 
