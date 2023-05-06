@@ -1,39 +1,67 @@
 body {
     width: 960px;
+    background-color: #fbf3f2;
+    color:#032539;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     display: flex;
 }
+
 /*Left Side Styling*/
 
 #leftSide {
-    width: 33%;
+    width: 40vw;
 }
 
 #slider {
-    width: 33%;
-    height: 100%;
+    width: 40vw;
+    height: 100vw;
 }
 
 #slide1, #slide2, #slide3 {
     height: 100vh;
-    width: 33vw;
+    width: 40vw;
+    position: absolute;
+    animation: slide 21s infinite;
 }
 
 #slide1 {
     background-image: url(../Media/calne.png);
+    animation-delay: 0s;
 }
 
 #slide2 {
     background-image: url(../Media/Bitsy\ Game\ ScreenShot.jpg);
+    animation-delay: -7s;
 }
 
 #slide3 {
-    background-image: url(../Media/calne.png);
+    background-image: url(../Media/bathSpaUni.jpg);
+    animation-delay: -14s;
 }
 
 #rightSide {
-    width: 66vw;
+    width: 60vw;
     height: 100vw;
+}
+
+@keyframes slide {
+0%,
+28%,
+100% {
+    transform: translateY(0);
+    animation-timing-function: ease;
+}
+
+33% {
+    transform: translateY(-150%);
+    animation-timing-function: step-end;
+}
+
+95% {
+    transform: translateY(100%);
+    animation-timing-function: ease;
+}
 }
