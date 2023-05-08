@@ -1,5 +1,5 @@
 body {
-    width: 960px;
+    width: 100vw;
     height: 2466px;
     background-color: #fbf3f2;
     color: #032539;
@@ -11,17 +11,21 @@ article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    height: 500px;
+    height: 30%;
+    width: 100%;
 }
 
+/*Screen1 Styling*/
+
+
 #leftSide {
-    width: 40vw;
-    height: 30vh;
+    width: 100%;
+    height: 100%;
 }
 
 #image {
-    height: 740px;
-    width: 40vw;
+    height: 100%;
+    width: 50%;
     position: absolute;
     animation: slide 21s infinite;
     background-size: cover;
@@ -31,25 +35,14 @@ article {
 
 #text {
     text-align: left;
+    width: 100%;
 }
 
 #text h1 {
     margin-bottom: 0px;
 }
 
-#text p {
-    margin-left: 8px;
-    padding-right: 65px;
-}
-
-header {
-    text-align: center;
-    width: 100vw;
-    font-size: 30px;
-    margin-bottom: 0px;
-    top: 10px;
-    position: fixed;
-}
+/*Nav Styling*/
 
 header nav ul {
     margin: 0px;
@@ -60,11 +53,6 @@ nav ul li {
     display: inline-block;
     text-align: center;
     transition: 0.25s ease-in-out;
-}
-
-
-header nav ul li:nth-child(1) {
-    color:lightslategray;
 }
 
 nav ul li:hover {
@@ -78,6 +66,8 @@ a {
 
 #rightSide {
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 #rightSide h1 {
@@ -86,20 +76,6 @@ a {
 
 #rightSide h2 {
     font-size: 58px;
-}
-
-#rightSide button {
-    fill: none;
-    padding: 15px;
-    border: #FA991C solid 3px;
-    color: #FA991C;
-    border-radius: 20px;
-    translate: 30px 0px;
-}
-
-#rightSide {
-    width: 60vw;
-    height: 30vh;
 }
 
 #name {
@@ -116,20 +92,62 @@ a {
     margin-bottom: 0px;
 }
 
-/*Footer styling*/
+/*Header styling*/
 
 header {
-    position: sticky;
-    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 0px;
+    top: 10px;
+    position: fixed;
 }
+
+/*General Screen Styling*/
 
 #screen1, #screen2 {
-    margin-bottom: 500px;
+    margin-bottom: 0px;
+    border-bottom: solid 6px #FA991C;
 }
+
+#text {
+    text-align: left;
+}
+
+#text h1 {
+    margin-bottom: 0px;
+}
+
+#text p {
+    margin-left: 8px;
+    padding-right: 65px;
+}
+
+/*Screen2 Styling*/
 
 #screen2 {
-    color:aqua;
+    width: 100%;
 }
 
+#monitor {
+    background-image: url(../Media/monitor.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    scale: 0.75;
+}
+
+/*Screen3 Styling*/
+
+
+/*Slider Styling*/
+
+#slide1, #slide2, #slide3 {
+    height: 387px;
+    width: 645px;
+    padding: 105px 0px 105px 0px;
+    position: absolute;
+} 
 
 
