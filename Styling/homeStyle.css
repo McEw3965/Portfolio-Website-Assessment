@@ -1,45 +1,32 @@
 body {
     width: 960px;
-    height: 740px;
-    overflow: hidden;
+    height: 2466px;
     background-color: #fbf3f2;
     color: #032539;
     font-family: Helvetica, Arial;
+    overflow:scroll
 }
 
-main {
+article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     height: 500px;
 }
 
-/*Left Side Styling*/
-
 #leftSide {
     width: 40vw;
+    height: 30vh;
 }
 
-/*#slider {
-    width: 40vw;
-    height: 100vw;
-} */
-
-#slide1,
-#slide2,
-#slide3 {
+#image {
     height: 740px;
-    ;
     width: 40vw;
     position: absolute;
     animation: slide 21s infinite;
     background-size: cover;
     background-position: center;
-}
-
-#slide1 {
     background-image: url(../Media/face.png);
-    animation-delay: 0s;
 }
 
 #text {
@@ -55,14 +42,16 @@ main {
     padding-right: 65px;
 }
 
-footer {
+header {
     text-align: center;
     width: 100vw;
     font-size: 30px;
-    margin-top: 150px;
+    margin-bottom: 0px;
+    top: 10px;
+    position: fixed;
 }
 
-footer nav ul {
+header nav ul {
     margin: 0px;
 }
 
@@ -74,7 +63,7 @@ nav ul li {
 }
 
 
-footer nav ul li:nth-child(1) {
+header nav ul li:nth-child(1) {
     color:lightslategray;
 }
 
@@ -82,48 +71,10 @@ nav ul li:hover {
     transform:scale(1.5);
 }
 
-.currentPage {
-    color: lightslategray;
-}
-
 a {
     text-decoration: none;
     color:#FA991C;
 }
-
-/*
-
-#slide2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../Media/Bitsy\ Game\ ScreenShot.jpg);
-    animation-delay: -7s;
-}
-
-#slide3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../Media/bathSpaUni.jpg);
-    animation-delay: -14s;
-}
-
-
-
-@keyframes slide {
-0%,
-28%,
-100% {
-    transform: translateY(0);
-    animation-timing-function: ease;
-}
-
-33% {
-    transform: translateY(-150%);
-    animation-timing-function: step-end;
-}
-
-95% {
-    transform: translateY(100%);
-    animation-timing-function: ease;
-}
-}
-*/
 
 #rightSide {
     text-align: center;
@@ -148,5 +99,37 @@ a {
 
 #rightSide {
     width: 60vw;
-    height: 100vw;
+    height: 30vh;
 }
+
+#name {
+    display: flex;
+}
+
+#name h1 {
+    font-weight: bold;
+    color:#FA991C;
+}
+
+#name h2 {
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+/*Footer styling*/
+
+header {
+    position: sticky;
+    bottom: 10px;
+}
+
+#screen1, #screen2 {
+    margin-bottom: 500px;
+}
+
+#screen2 {
+    color:aqua;
+}
+
+
+
