@@ -27,7 +27,6 @@ article {
     height: 100%;
     width: 50%;
     position: absolute;
-    animation: slide 21s infinite;
     background-size: cover;
     background-position: center;
     background-image: url(../Media/face.png);
@@ -144,10 +143,50 @@ header {
 /*Slider Styling*/
 
 #slide1, #slide2, #slide3 {
-    height: 387px;
-    width: 645px;
-    padding: 105px 0px 105px 0px;
+    height: 400px;
+    width: 675px;
+    translate: 48px 94px;
     position: absolute;
+    animation: fade 30s infinite;
 } 
+
+#slide1 {
+    animation-delay: 0s;
+    background-image: url(../Media/Bitsy\ Game\ ScreenShot.jpg);
+}
+
+#slide2 {
+    animation-delay: -10s;
+    background-image: url(../Media/bathSpaUni.jpg);
+}
+
+#slide3 {
+    animation-delay: -20s;  
+    background-image: url(../Media/calne.png);
+}
+
+    @keyframes fade {
+        0%,
+        28%,
+        100% {
+           /* transform: translateX(0); */
+           opacity: 100%;
+            animation-timing-function: ease;
+        }
+        
+        33% {
+          /*  transform: translateX(-150%);  */
+            opacity: 0%;
+            animation-timing-function: ease;
+        } 
+        
+        95% {
+           /* transform: translateX(100%); */
+            opacity: 0%;
+            animation-timing-function: ease;
+        }
+        }
+        
+    
 
 
