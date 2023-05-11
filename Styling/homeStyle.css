@@ -4,7 +4,7 @@ body {
     background-color: #fbf3f2;
     color: #032539;
     font-family: Helvetica, Arial;
-    overflow:scroll
+    overflow: scroll
 }
 
 
@@ -56,13 +56,15 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transform:scale(1.5);
+    transform: scale(1.5);
 }
 
 a {
     text-decoration: none;
-    color:#FA991C;
+    color: #FA991C;
 }
+
+/*Screen 1 Styling*/
 
 #rightSide {
     text-align: center;
@@ -78,16 +80,16 @@ a {
     font-size: 58px;
 }
 
-#name {
+.flexbox {
     display: flex;
 }
 
-#name h1 {
+#screen1 .flexbox h1 {
     font-weight: bold;
-    color:#FA991C;
+    color: #FA991C;
 }
 
-#name h2 {
+#screen1 .flexbox h2 {
     margin-top: 150px;
     margin-bottom: 0px;
 }
@@ -105,7 +107,8 @@ header {
 
 /*General Screen Styling*/
 
-#screen1, #screen2 {
+#screen1,
+#screen2 {
     margin-bottom: 0px;
     border-bottom: solid 6px #FA991C;
 }
@@ -129,6 +132,17 @@ header {
     width: 100%;
 }
 
+#screen2 .flexbox h2 {
+    color:#FA991C;
+    font-weight: bold;
+    margin-top: 40%;
+    font-size: 106px;
+}
+
+#screen2 .flexbox h3 {
+    margin-top: 41%;
+}
+
 #monitor {
     background-image: url(../Media/monitor.png);
     height: 100%;
@@ -140,12 +154,11 @@ header {
 
 /*Screen3 Styling*/
 
-#screen3 #leftSide {
+#screen3 {
     display: flex;
-
-   /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr); */
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .columns {
@@ -153,11 +166,43 @@ header {
     height: 100%;
     width: 28%;
     margin: 0%;
+    margin-top: 45px;
+    transition: 0.5s linear;
+    background-size: cover;
+    background-position: center;
+}
+
+.columns h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.columns button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.columns .panelInfo {
+    margin-top: 65%;
+    visibility: hidden;
+    transition-delay: 0.5s;
 }
 
 .columns:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.jpg);
     width: 33%;
     margin-right: 15px;
+    margin-left: 15px;
+    box-shadow: 0px -25px 20px -20px #FA991C,
+        0px 25px 20px -20px #FA991C;
+}
+
+.columns:hover .panelInfo {
+    visibility: visible;
 }
 
 
@@ -168,7 +213,9 @@ header {
     width: 100%;
 }
 
-#slide1, #slide2, #slide3 {
+#slide1,
+#slide2,
+#slide3 {
     height: 54.3%;
     width: 87.5%;
     translate: 48px 94px;
@@ -176,7 +223,7 @@ header {
     animation: fade 30s infinite;
     background-repeat: no-repeat;
     background-size: cover;
-} 
+}
 
 #slide1 {
     animation-delay: 0s;
@@ -189,44 +236,45 @@ header {
 }
 
 #slide3 {
-    animation-delay: -20s;  
+    animation-delay: -20s;
     background-image: url(../Media/calne.png);
 }
 
 #monitor:hover #slide1 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/Bitsy\ Game\ ScreenShot.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/Bitsy\ Game\ ScreenShot.jpg);
 }
 
 #monitor:hover #slide2 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/bathSpaUni.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/bathSpaUni.jpg);
 }
 
 #monitor:hover #slide3 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.png);
 }
 
-    @keyframes fade {
-        0%,
-        28%,
-        100% {
-           /* transform: translateX(0); */
-           opacity: 100%;
-            animation-timing-function: ease;
-        }
-        
-        33% {
-          /*  transform: translateX(-150%);  */
-            opacity: 0%;
-            visibility: hidden;
-            animation-timing-function: ease;
-        } 
-        
-        95% {
-            opacity: 0%;
-            animation-timing-function: ease;
-        }
-        }
-        
+@keyframes fade {
+
+    0%,
+    28%,
+    100% {
+        /* transform: translateX(0); */
+        opacity: 100%;
+        animation-timing-function: ease;
+    }
+
+    33% {
+        /*  transform: translateX(-150%);  */
+        opacity: 0%;
+        visibility: hidden;
+        animation-timing-function: ease;
+    }
+
+    95% {
+        opacity: 0%;
+        animation-timing-function: ease;
+    }
+}
+
 /*Responsive Styling*/
 
 @media screen and (max-width: 1080px) {
@@ -239,13 +287,12 @@ header {
         height: 100%;
     }
 
-    #slide1, #slide2, #slide3 {
+    #slide1,
+    #slide2,
+    #slide3 {
         height: 52.5%;
         width: 91%;
         top: 40px;
-        left:-8px;
+        left: -8px;
     }
 }
-
-
-
