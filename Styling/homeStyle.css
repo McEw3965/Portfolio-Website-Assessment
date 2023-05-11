@@ -130,6 +130,7 @@ header {
 
 #screen2 {
     width: 100%;
+    background-color:#032539;
 }
 
 #screen2 #leftSide h2 {
@@ -145,6 +146,7 @@ header {
     margin-top: 0px;
     font-size: 92px;
     margin-left: 5%;
+    color: white;
 }
 
 #monitor {
