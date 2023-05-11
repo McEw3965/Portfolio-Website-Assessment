@@ -169,11 +169,13 @@ header {
 }
 
 #slide1, #slide2, #slide3 {
-    height: 52.5%;
-    width: 91%;
+    height: 54.3%;
+    width: 87.5%;
     translate: 48px 94px;
     position: absolute;
     animation: fade 30s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
 } 
 
 #slide1 {
@@ -227,7 +229,7 @@ header {
         
 /*Responsive Styling*/
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1080px) {
     body {
         margin-top: 30px;
         height: 3240px;
