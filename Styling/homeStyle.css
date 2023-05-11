@@ -132,15 +132,19 @@ header {
     width: 100%;
 }
 
-#screen2 .flexbox h2 {
+#screen2 #leftSide h2 {
     color:#FA991C;
     font-weight: bold;
-    margin-top: 40%;
+    margin-top: 25%;
+    margin-bottom: 0px;
     font-size: 106px;
+    margin-left: 5%;
 }
 
-#screen2 .flexbox h3 {
-    margin-top: 41%;
+#screen2 #leftSide h3 {
+    margin-top: 0px;
+    font-size: 92px;
+    margin-left: 5%;
 }
 
 #monitor {
@@ -150,6 +154,22 @@ header {
     background-size: cover;
     background-position: center;
     scale: 0.75;
+}
+
+#monitor h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    visibility: hidden;
+}
+
+#monitor button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    visibility: hidden;
 }
 
 /*Screen3 Styling*/
@@ -176,6 +196,7 @@ header {
     color: white;
     font-weight: bold;
     font-size: 28px;
+    margin-top: 45px;
 }
 
 .columns button {
@@ -232,12 +253,12 @@ header {
 
 #slide2 {
     animation-delay: -10s;
-    background-image: url(../Media/bathSpaUni.jpg);
+    background-image: url(../Media/spiral.png);
 }
 
 #slide3 {
     animation-delay: -20s;
-    background-image: url(../Media/calne.png);
+    background-image: url(../Media/vendingMachine.png);
 }
 
 #monitor:hover #slide1 {
@@ -245,11 +266,15 @@ header {
 }
 
 #monitor:hover #slide2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/bathSpaUni.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/spiral.png);
 }
 
 #monitor:hover #slide3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/vendingMachine.png);
+}
+
+#monitor:hover button, #monitor:hover h3 {
+    visibility: visible;
 }
 
 @keyframes fade {
