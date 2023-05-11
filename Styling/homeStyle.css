@@ -140,6 +140,26 @@ header {
 
 /*Screen3 Styling*/
 
+#screen3 #leftSide {
+    display: flex;
+
+   /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); */
+}
+
+.columns {
+    background-image: url(../media/calne.jpg);
+    height: 100%;
+    width: 28%;
+    margin: 0%;
+}
+
+.columns:hover {
+    width: 33%;
+    margin: 15px;
+}
+
 
 /*Slider Styling*/
 
