@@ -4,7 +4,8 @@ body {
     background-color: #fbf3f2;
     color: #032539;
     font-family: Helvetica, Arial;
-    overflow: scroll
+    overflow: scroll;
+    margin: 0;
 }
 
 
@@ -304,7 +305,7 @@ header {
 
 /*Responsive Styling*/
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 1080px) {
     body {
         margin-top: 30px;
         height: 3240px;
@@ -322,4 +323,4 @@ header {
         top: 40px;
         left: -8px;
     }
-}
+} 
