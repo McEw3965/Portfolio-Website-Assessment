@@ -58,3 +58,28 @@ a {
     color:#FA991C;
     font-size: 120px;
 }
+
+#timeline {
+    width: 100%;
+    height:69%;
+    border: none;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+}
+
+#timelineRight, #timelineLeft {
+    width: calc(50% + 8px);
+}
