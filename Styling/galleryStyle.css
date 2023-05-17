@@ -67,6 +67,7 @@ a {
     margin: 50px auto;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 #timeline::before {
@@ -78,8 +79,40 @@ a {
     width: 2px;
     height: 100%;
     background: #CCD1D9;
+    z-index: 1;
+}
+
+#point {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 25px;
+    border: 3px solid #FA991C;
+    background-color:#FA991C;
+    z-index: 10; /*Brings point in front of line to stop overlap*/
+
 }
 
 #timelineRight, #timelineLeft {
-    width: calc(50% + 8px);
+    width: calc(50% + 9.7px);
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+#timelineRight {
+    float: right;
+}
+
+#timelineLeft {
+    float: left;
+    direction: rtl;
+}
+
+.content {
+    width: 90%;
+}
+
+.content h2, .content h3, .content h4 {
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
