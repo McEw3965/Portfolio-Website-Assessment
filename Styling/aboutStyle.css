@@ -77,7 +77,20 @@ a {
     width: 50px;
     border: 2px solid #000000;
     border-radius: 50%;
+    transition: 0.5s ease-in-out;
 }
+
+.info:hover {
+    width: 250px;
+    height: 250px;
+    transform: rotate(0deg);
+    animation-play-state: paused;
+}
+
+#circles:hover{
+    animation-play-state: paused;
+}
+
 .content {
     animation: counterRotate infinite 30s;
 }
@@ -135,4 +148,3 @@ a {
         transform: rotate(414deg);
     }
  }
-
