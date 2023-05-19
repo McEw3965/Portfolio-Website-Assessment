@@ -259,7 +259,7 @@ header {
 
 #slide1 {
     animation-delay: 0s;
-    background-image: url(../Media/Bitsy\ Game\ ScreenShot.jpg);
+    background-image: url(../Media/bitsyScreenShot.jpg);
 }
 
 #slide2 {
@@ -273,7 +273,7 @@ header {
 }
 
 #monitor:hover #slide1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/Bitsy\ Game\ ScreenShot.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/bitsyScreenShot.jpg);
 }
 
 #monitor:hover #slide2 {
