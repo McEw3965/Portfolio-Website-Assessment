@@ -193,7 +193,7 @@ header {
 }
 
 .columns {
-    background-image: url(../Media/calne.jpg);
+    background-image: url(../Media/calne.png);
     height: 100%;
     width: 28%;
     margin: 0%;
@@ -225,7 +225,7 @@ header {
 }
 
 .columns:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.png);
     width: 33%;
     margin-right: 15px;
     margin-left: 15px;
