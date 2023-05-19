@@ -257,20 +257,6 @@ header {
     background-size: cover;
 }
 
-#slide1 {
-    animation-delay: 0s;
-    background-image: url(../Media/bitsyScreenShot.jpg);
-}
-
-#slide2 {
-    animation-delay: -10s;
-    background-image: url(../Media/spiral.png);
-}
-
-#slide3 {
-    animation-delay: -20s;
-    background-image: url(../Media/vendingMachine.png);
-}
 
 #monitor:hover #slide1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/bitsyScreenShot.jpg);
@@ -286,6 +272,21 @@ header {
 
 #monitor:hover button, #monitor:hover h3 {
     visibility: visible;
+}
+
+#slide1 {
+    animation-delay: 0s;
+    background-image: url(../Media/bitsyScreenShot.jpg);
+}
+
+#slide2 {
+    animation-delay: -10s;
+    background-image: url(../Media/spiral.png);
+}
+
+#slide3 {
+    animation-delay: -20s;
+    background-image: url(../Media/vendingMachine.png);
 }
 
 @keyframes fade {
