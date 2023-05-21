@@ -14,16 +14,21 @@ body {
     font-family: 'poppins', Arial;
     font-weight: 100;
     overflow: scroll;
-    overflow-x:hidden;
+    overflow-x: hidden;
     margin: 0;
 }
 
 h2 {
     font-weight: 400;
+    font-size: 90px;
+    color: var(--primary-colour);
+    line-height: 1;
 }
 
-h3 {
+h2 span {
     font-weight: 100;
+    font-size: 70px;
+    color: var(--secondary-colour);
 }
 
 
@@ -31,7 +36,7 @@ article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    height: 30%;
+    height: 33%;
     width: 100%;
 }
 
@@ -68,26 +73,26 @@ a {
 /*Screen 1 Styling*/
 
 #screen1 {
-    background-image:url(../Media/laptopScreen.png);
+    background-image: url(../Media/laptopScreen.png);
     background-size: 85%;
     background-repeat: no-repeat;
     text-align: center;
 }
 
 #screen1 h1 {
-    width:1100px;
+    width: 1100px;
     font-size: 90px;
     color: var(--primary-colour);
-    margin-left:310px;
-    margin-top:225px;
-    text-align:right;
-    font-weight:normal;
+    margin-left: 310px;
+    margin-top: 225px;
+    text-align: right;
+    font-weight: normal;
     font-family: 'Poppins', cursive;
-    line-height:1;
+    line-height: 1;
 }
 
 #screen1 span {
-    color:var(--secondary-colour);
+    color: var(--secondary-colour);
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
     font-weight: 100;
@@ -154,13 +159,13 @@ header {
 
 #screen2 #leftSide h2 {
     text-align: right;
-    color:var(--primary-colour);
+    color: var(--primary-colour);
     margin-top: 20%;
     margin-bottom: 0px;
     font-size: 90px;
     margin-left: 2%;
     margin-right: 5%;
-    line-height:1;
+    line-height: 1;
 }
 
 #screen2 #leftSide h2 span {
@@ -176,14 +181,14 @@ header {
 }
 
 #monitor {
-    background-image:url(../Media/macMonitor.png);
+    background-image: url(../Media/macMonitor.png);
     height: 100%;
     width: 95%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     scale: 1;
-    z-index:3;
+    z-index: 3;
     position: absolute;
 }
 
@@ -206,11 +211,51 @@ header {
 /*Screen3 Styling*/
 
 #screen3 {
+    /* background-image:url(../Media/phoneScreen.png); 
+    background-size:contain;
+    background-repeat:no-repeat; */
+    text-align: right;
+}
+
+#screen3 #leftSide {
+    background-image: url(../Media/phoneScreen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#screen3 h2 {
+    text-align: left;
+    margin-right: 15%;
+    margin-top: 35%;
+}
+
+#phone {
+    background-image:url(../Media/portfolioPicture.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin-left: 410px;
+    margin-top: 130px;
+    width: 600px;
+    height: 400px;
+
+}
+
+#screen3 h3 {
+    font-family: 'Great Vibes', Arial;
+    font-size: 34px;
+    margin-right: 340px;
+
+}
+
+
+/* #screen3 {
     display: flex;
     text-align: center;
     margin: 0 auto;
     justify-content: center;
-}
+} 
 
 .columns {
     background-image: url(../Media/calne.png);
@@ -257,6 +302,8 @@ header {
     visibility: visible;
 }
 
+*/
+
 /*Slider Styling*/
 
 #screen2 #rightSide {
@@ -266,9 +313,9 @@ header {
 #slide1,
 #slide2,
 #slide3 {
-    height: 54.3%;
+    height: 48.9%;
     width: 95.5%;
-    translate: 17px 96px;
+    translate: 17px 33.9%;
     position: absolute;
     animation: fade 30s infinite;
     background-repeat: no-repeat;
@@ -293,7 +340,8 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/vendingMachine.png);
 }
 
-#monitor:hover button, #monitor:hover h3 {
+#monitor:hover button,
+#monitor:hover h3 {
     visibility: visible;
 }
 
@@ -355,4 +403,4 @@ header {
         top: 40px;
         left: -8px;
     }
-} 
+}
