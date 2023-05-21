@@ -153,10 +153,6 @@ header {
     width: 100%;
 }
 
-#rightSide h2 {
-    font-size: 58px;
-}
-
 #screen2 #leftSide h2 {
     text-align: right;
     color: var(--primary-colour);
@@ -237,7 +233,7 @@ header {
     
     margin-left: 410px;
     margin-top: 130px;
-    width: 600px;
+    width: 400px;
     height: 400px;
 
 }
@@ -245,7 +241,7 @@ header {
 #screen3 h3 {
     font-family: 'Great Vibes', Arial;
     font-size: 34px;
-    margin-right: 340px;
+    margin-right: 140px;
 
 }
 
@@ -347,12 +343,12 @@ header {
 
 #slide1 {
     animation-delay: 0s;
-    background-image: url(../Media/bitsyScreenShot.jpg);
+    background-image: url(../Media/spiral.png);
 }
 
 #slide2 {
     animation-delay: -10s;
-    background-image: url(../Media/spiral.png);
+    background-image: url(../Media/bitsyScreenShot.jpg);
 }
 
 #slide3 {
