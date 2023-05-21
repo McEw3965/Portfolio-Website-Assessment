@@ -11,9 +11,19 @@ body {
     height: 2466px;
     background-color: var(--background-colour);
     color: var(--secondary-colour);
-    font-family: Helvetica, Arial;
+    font-family: 'poppins', Arial;
+    font-weight: 100;
     overflow: scroll;
+    overflow-x:hidden;
     margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 100;
 }
 
 
@@ -31,24 +41,6 @@ article {
 #leftSide {
     width: 100%;
     height: 100%;
-}
-
-#image {
-    height: 95%;
-    width: 50%;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Media/face.png);
-}
-
-#text {
-    text-align: left;
-    width: 100%;
-}
-
-#text h1 {
-    margin-bottom: 0px;
 }
 
 /*Nav Styling*/
@@ -75,33 +67,41 @@ a {
 
 /*Screen 1 Styling*/
 
-#rightSide {
+#screen1 {
+    background-image:url(../Media/laptopScreen.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
     text-align: center;
-    height: 100%;
-    width: 100%;
 }
 
-#rightSide h1 {
-    font-size: 128px;
-}
-
-#rightSide h2 {
-    font-size: 58px;
-}
-
-.flexbox {
-    display: flex;
-}
-
-#screen1 .flexbox h1 {
-    font-weight: bold;
+#screen1 h1 {
+    width:1100px;
+    font-size: 90px;
     color: var(--primary-colour);
+    margin-left:310px;
+    margin-top:225px;
+    text-align:right;
+    font-weight:normal;
+    font-family: 'Poppins', cursive;
+    line-height:1;
 }
 
-#screen1 .flexbox h2 {
-    margin-top: 150px;
-    margin-bottom: 0px;
+#screen1 span {
+    color:var(--secondary-colour);
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 100;
 }
+
+#screen1 #signature {
+    font-size: 34px;
+    font-family: 'Great Vibes', Arial;
+}
+
+br {
+    line-height: 1;
+}
+
 
 /*Header styling*/
 
@@ -139,32 +139,52 @@ header {
 
 #screen2 {
     width: 100%;
-    background-color:var(--secondary-colour);
+    /*background-color:var(--secondary-colour);*/
+}
+
+#rightSide {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+#rightSide h2 {
+    font-size: 58px;
 }
 
 #screen2 #leftSide h2 {
+    text-align: right;
     color:var(--primary-colour);
-    font-weight: bold;
-    margin-top: 25%;
+    margin-top: 20%;
     margin-bottom: 0px;
-    font-size: 106px;
-    margin-left: 5%;
+    font-size: 90px;
+    margin-left: 2%;
+    margin-right: 5%;
+    line-height:1;
 }
 
-#screen2 #leftSide h3 {
+#screen2 #leftSide h2 span {
+    font-weight: 100;
     margin-top: 0px;
-    font-size: 92px;
-    margin-left: 5%;
-    color: white;
+    font-size: 70px;
+    margin-left: 2%;
+    color: var(--secondary-colour);
+}
+
+#screen2 #leftSide h2 #modules {
+    font-size: 34px;
 }
 
 #monitor {
-    background-image: url(../Media/monitor.png);
+    background-image:url(../Media/macMonitor.png);
     height: 100%;
-    width: 100%;
-    background-size: cover;
+    width: 95%;
+    background-size: contain;
     background-position: center;
-    scale: 0.75;
+    background-repeat: no-repeat;
+    scale: 1;
+    z-index:3;
+    position: absolute;
 }
 
 #monitor h3 {
@@ -239,21 +259,26 @@ header {
 
 /*Slider Styling*/
 
-#monitor {
-    height: 100%;
-    width: 100%;
+#screen2 #rightSide {
+    perspective: 500px;
 }
 
 #slide1,
 #slide2,
 #slide3 {
     height: 54.3%;
-    width: 87.5%;
-    translate: 48px 94px;
+    width: 95.5%;
+    translate: 17px 96px;
     position: absolute;
     animation: fade 30s infinite;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
+
+    /* Code for perspective image.
+    transform: skewX(5deg) skewY(15deg);
+    clip-path: polygon(0px 0px, 200px 0px, 150px 300px, 50px 300px); */
+
 }
 
 #monitor:hover #slide1 {
