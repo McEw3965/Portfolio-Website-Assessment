@@ -12,7 +12,13 @@
     <meta property="og::type" content="website">
     <meta property="og::url" content="https://mcew3965.github.io/Portfolio-Website-Assessment/Pages/about.html">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--External library used for progress bars-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--External library used for progress bars-->
     <link rel="stylesheet" href="../Styling/aboutStyle.css">
 </head>
 
@@ -21,17 +27,66 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#splash">•</a></li>
-                <li><a href="#splash">•</a></li>
+                <li><a href="../Pages/index.html"> &#11164; </a></li>
             </ul>
         </nav>
     </header>
 
-    <article id="screen1">
-        <div id="pieChart"></div>
-       
-    </article> 
+    <article id="splash">
 
+        <div id="leftSide">
+
+        </div>
+
+        <div id="rightSide">
+
+            <div id="personalStatement">
+                <h2>Personal Statement</h2>
+                <p>A self-motivated, conscientious, and polite A-level graduate looking
+                    for an opportunity to demonstrate his willingness to face new
+                    challenges and broaden his experience outside of full-time
+                    education. Seeking a role to further promote his social and
+                    communication skills. Currently studying at Bath Spa University</p>
+            </div>
+
+            <div id="backgroundInfo">
+
+                <h2>Currently Studying</h2>
+
+                <p>2023 | Creative Computing | Bath Spa University</p>
+
+                <p>A computing student at Bath Spa University, passionate about all things
+                    related to technology and software development. Throughout my academic journey, I have acquired a
+                    diverse set of skills and experiences that have prepared me for a career in the computing industry.
+                </p>
+            </div>
+
+            <div id="skills">
+
+                <h3>Programming Skills</h2>
+
+                <div id="progressBars">
+                    <div class="w3-light-grey w3-round progressOutline">
+                        <div class="w3-container w3-round w3-blue progressMeter" id="cPlusPlus">C++: 70%</div>
+                    </div>
+
+                    <div class="w3-light-grey w3-round progressOutline">
+                        <div class="w3-container w3-round w3-blue progressMeter" id="html">HTML: 75%</div>
+                    </div>
+
+                    <div class="w3-light-grey w3-round progressOutline">
+                        <div class="w3-container w3-round w3-blue progressMeter" id="css">CSS: 65%</div>
+                    </div>
+
+                    <div class="w3-light-grey w3-round progressOutline">
+                        <div class="w3-container w3-round w3-blue progressMeter" id="javascript">JS: 50%</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </article>
 
     <script src="../index.js"></script>
 </body>
