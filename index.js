@@ -16,9 +16,3 @@ document.addEventListener("visibilitychange", function() {
     }
 } );
 
-const circle1 = document.getElementById("circle1");
-const circle2 = document.getElementById("circle2");
-const circle3 = document.getElementById("circle3");
-const circle4 = document.getElementById("circle4");
-const circle5 = document.getElementById("circle5");
-
