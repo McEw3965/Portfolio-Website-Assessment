@@ -8,10 +8,10 @@
 
 body {
     width: 100vw;
-    height: 400vh;
+    height: 100vh;
     background-color: var(--background-colour);
     color: var(--secondary-colour);
-    font-family: Helvetica, Arial;
+    font-family: 'Poppins', Arial;
     overflow: scroll;
     overflow-x:hidden;
     margin: 0 auto; 
@@ -19,14 +19,14 @@ body {
 
 article {
     width: 100%;
-    height: 20%;
+    height: 100%;
     border-bottom: var(--primary-colour) 3px solid;
 }
 
 /*Nav Styling*/
 
 header {
-    text-align: center;
+    text-align: left;
     width: 100%;
     font-size: 30px;
     margin-bottom: 0px;
@@ -41,8 +41,10 @@ header nav ul {
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     transition: 0.25s ease-in-out;
+    position: absolute;
+    z-index:2;
 }
 
 nav ul li:hover {
@@ -56,22 +58,115 @@ a {
 
 #splash {
     text-align: center;
+    display:flex;
 }
 
-#splash h1 {
-    color:var(--primary-colour);
-    font-size: 120px;
-    margin-top: 210px;
+#leftSide {
+    width: 40%;
+    background-image:url(../Media/portfolioPicture.png);
+    background-size: cover;
+    margin-bottom: 0px;
+    translate: 0px -75px;
+    z-index: -1;
 }
 
-#pieChart {
+#rightSide {
+    width: 50%;
+}
+
+#rightSide h2 {
+    margin-right: 180px;
+    margin-top: 35px;
+    font-family: 'Poppins', Arial;
+    text-align: left;
+    font-size: 34px;
+    width: 700px;
+    color:#FA991C;
+}
+
+#rightSide h3 {
+    font-family: 'poppins', Arial;
+    margin-right: 180px;
+    text-align: left;
+    font-size: 34px;
+    color:#FA991C;
+}
+
+#rightSide p {
+    text-align: left;
+    margin-right: 100px;
+}
+
+/*Progress Bar Styling*/
+
+#skills {
+    position: absolute;
+    top: 60%;
+}
+
+#progressBars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 45px;
+}
+
+.progressMeter, .progressOutline {
+    height: 30px;
+}
+
+.progressOutline {
+    width: 300px;
+    border: 2px solid var(--secondary-colour);
+    border-radius: 25px;
+    margin-top: 25px;
+    background-color: #E0E0E0;
+}
+
+.progressMeter {
+    margin-right: 0px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: black !important;
+    height: 27px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top:2px;
+}
+
+#cPlusPlus {
+    background-color:#b04040 !important;
+    width: 70%;
+}
+
+#html {
+    background-color:#FFAA33 !important;
+    width: 75%;
+}
+
+#css {
+    background-color: #D2E5F6 !important;
+    width: 65%;
+    height: 26.5px;
+}
+
+#javascript {
+    background-color: #F5DA59 !important;
+    width: 50%;
+    height: 26.5px;
+}
+
+
+
+
+/* #pieChart {
     width: 300px;
     height: 300px;
     border-radius: 360px;
     border: 3px black solid;
     background: conic-gradient(at center,red 0%, red 25%, green 25%, green 50%, blue 50%, blue 75%, yellow 75%, yellow 100%);
-}
-
+} */
 
 
 
