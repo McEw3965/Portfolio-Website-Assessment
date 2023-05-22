@@ -64,6 +64,14 @@ a {
     margin-top: 210px;
 }
 
+#pieChart {
+    width: 300px;
+    height: 300px;
+    border-radius: 360px;
+    border: 3px black solid;
+    background: conic-gradient(at center,red 0%, red 25%, green 25%, green 50%, blue 50%, blue 75%, yellow 75%, yellow 100%);
+}
+
 
 
 
