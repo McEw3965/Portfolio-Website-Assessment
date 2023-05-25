@@ -1,5 +1,7 @@
 /*General Styling*/
 
+
+/*Variables to be used throughout page styling*/
 :root {
     --primary-colour: #FA991C;
     --secondary-colour: #032539;
@@ -104,7 +106,6 @@ a {
 br {
     line-height: 1;
 }
-
 
 /*Header styling*/
 
@@ -244,59 +245,7 @@ header {
 }
 
 
-/* #screen3 {
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
-} 
 
-.columns {
-    background-image: url(../Media/calne.png);
-    height: 100%;
-    width: 28%;
-    margin: 0%;
-    margin-top: 45px;
-    transition: 0.5s linear;
-    background-size: cover;
-    background-position: center;
-}
-
-.columns h3 {
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-    margin-top: 45px;
-}
-
-.columns button {
-    background-color: var(--background-colour);
-    color: var(--secondary-colour);
-    border: none;
-    border-radius: 15px;
-    font-size: 20px;
-}
-
-.columns .panelInfo {
-    margin-top: 65%;
-    visibility: hidden;
-    transition-delay: 0.5s;
-}
-
-.columns:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.png);
-    width: 33%;
-    margin-right: 15px;
-    margin-left: 15px;
-    box-shadow: 0px -25px 20px -20px var(--primary-colour),
-        0px 25px 20px -20px var(--primary-colour);
-}
-
-.columns:hover .panelInfo {
-    visibility: visible;
-}
-
-*/
 
 /*Slider Styling*/
 
@@ -401,4 +350,68 @@ header {
         width: 96.3%;
         translate: 20px 27%;
     }
+
+    #phone {
+        margin-left: 505px;
+    }
+
+    #screen3 h3 {
+        margin-right: 190px;
+    }
 }
+
+/*Unused styling*/
+
+/* #screen3 {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+} 
+
+.columns {
+    background-image: url(../Media/calne.png);
+    height: 100%;
+    width: 28%;
+    margin: 0%;
+    margin-top: 45px;
+    transition: 0.5s linear;
+    background-size: cover;
+    background-position: center;
+}
+
+.columns h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 45px;
+}
+
+.columns button {
+    background-color: var(--background-colour);
+    color: var(--secondary-colour);
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.columns .panelInfo {
+    margin-top: 65%;
+    visibility: hidden;
+    transition-delay: 0.5s;
+}
+
+.columns:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/calne.png);
+    width: 33%;
+    margin-right: 15px;
+    margin-left: 15px;
+    box-shadow: 0px -25px 20px -20px var(--primary-colour),
+        0px 25px 20px -20px var(--primary-colour);
+}
+
+.columns:hover .panelInfo {
+    visibility: visible;
+}
+
+*/
