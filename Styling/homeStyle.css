@@ -175,6 +175,17 @@ header {
     font-size: 34px;
 }
 
+#screen2 a {
+    position: absolute;
+    top: 175%;
+    left: 25%;
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+}
+
 #monitor {
     background-image: url(../Media/macMonitor.png);
     height: 100%;
