@@ -20,15 +20,13 @@ document.addEventListener("visibilitychange", function () {
 const root = document.documentElement;
 const computedStyles = getComputedStyle(root);
 
-let isDarkMode;
+let isDarkMode = 1;
 
 function darkModeToggle() {
 
-    console.log('A' + isDarkMode);
+    //isDarkMode = parseInt(localStorage.getItem("isDarkMode"));
 
-    isDarkMode = parseInt(localStorage.getItem("isDarkMode"));
-
-    console.log('B' + isDarkMode);
+    console.log(isDarkMode);
 
     if (isDarkMode === 0) {
         document.documentElement.style.setProperty('--secondary-colour', '#fbf3f2');
@@ -36,10 +34,8 @@ function darkModeToggle() {
 
         const secondaryColour = computedStyles.getPropertyValue('--secondary-colour');
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
-
-        console.log('C' + isDarkMode);
         
-        // isDarkMode = 1; 
+         isDarkMode = 1; 
 
         localStorage.setItem("isDarkMode", "1"); 
 
@@ -52,7 +48,7 @@ function darkModeToggle() {
 
         console.log('C' + isDarkMode);
 
-       // isDarkMode = 0;
+        isDarkMode = 0;
 
         localStorage.setItem("isDarkMode", "0");
     }
@@ -86,9 +82,9 @@ function darkModeCheck() {
     }
 }
 
-window.addEventListener('load', function () {
+/*window.addEventListener('load', function () {
 
     darkModeCheck();
-})
+}) */
 
 
