@@ -69,6 +69,10 @@ a {
     color: var(--primary-colour);
 }
 
+#screen2 a:hover, #screen3 a:hover {
+    opacity: 75%;
+}
+
 /*Screen 1 Styling*/
 
 #screen1 {
@@ -76,6 +80,25 @@ a {
     background-size: 85%;
     background-repeat: no-repeat;
     text-align: center;
+}
+
+#darkMode {
+    font-family:'poppins', Arial;
+    padding: 5px;
+    width: 85px;
+    height: 35px;
+    border:none;
+    border-radius: 30px;
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    position: absolute;
+    margin-top: 25px;
+    margin-right: 25px;
+    right: 0%;
+}
+
+#darkMode:hover {
+    opacity: 75%;
 }
 
 #screen1 h1 {
@@ -205,14 +228,7 @@ header {
     visibility: hidden;
 }
 
-#monitor button {
-    background-color: var(--background-colour);
-    color: var(--secondary-colour);
-    border: none;
-    border-radius: 15px;
-    font-size: 20px;
-    visibility: hidden;
-}
+
 
 /*Screen3 Styling*/
 
@@ -289,22 +305,6 @@ header {
 
 }
 
-#monitor:hover #slide1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/spiral.png);
-}
-
-#monitor:hover #slide2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/bitsyScreenShot.jpg);
-}
-
-#monitor:hover #slide3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Media/vendingMachine.png);
-}
-
-#monitor:hover button,
-#monitor:hover h3 {
-    visibility: visible;
-}
 
 #slide1 {
     animation-delay: 0s;
