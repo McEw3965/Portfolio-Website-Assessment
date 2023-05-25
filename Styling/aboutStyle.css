@@ -143,18 +143,19 @@ a {
 #html {
     background-color:#FFAA33 !important;
     width: 75%;
+    height: 26px;
 }
 
 #css {
     background-color: #D2E5F6 !important;
     width: 65%;
-    height: 26.5px;
+    height: 26px;
 }
 
 #javascript {
     background-color: #F5DA59 !important;
     width: 50%;
-    height: 26.5px;
+    height: 26px;
 }
 
 
