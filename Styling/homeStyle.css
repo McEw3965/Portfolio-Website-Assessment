@@ -256,9 +256,9 @@ header {
 #slide1,
 #slide2,
 #slide3 {
-    height: 48.9%;
-    width: 95.5%;
-    translate: 17px 33.9%;
+    height: 49.9%;
+    width: 96.8%;
+    translate: 14px 32.8%;
     position: absolute;
     animation: fade 30s infinite;
     background-repeat: no-repeat;
