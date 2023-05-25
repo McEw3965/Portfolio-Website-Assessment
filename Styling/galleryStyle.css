@@ -11,10 +11,11 @@ body {
     height: 400vh;
     background-color: var(--background-colour);
     color: var(--secondary-colour);
-    font-family: Helvetica, Arial;
+    font-family: 'poppins', Arial;
     overflow: scroll;
     overflow-x:hidden;
     margin: 0 auto; 
+    font-weight: 400;
 }
 
 article {
@@ -87,7 +88,7 @@ a {
     left: 50%;
     margin-left: -1px;
     width: 2px;
-    height: 80%;
+    height: 100%;
     background: var(--secondary-colour);
     z-index: 1;
 }
@@ -126,20 +127,22 @@ a {
 }
 
 #timelineRight .content {
-    padding-right: 30px;
+    padding: 15px 0px 15px 30px;
+    
 }
 
 #timelineLeft .content {
-    padding-left: 30px;
+    padding: 15px 30px 0px 15px;
 }
 
 .content h2, .content h3, .content h4 {
     margin-top: 0px;
     margin-bottom: 10px;
+    font-family:'poppins', arial;
 }
 
 .content h3, .content h4 {
-    opacity: 50%;
+    color:#7F8C96;
 }
 
 .content h2 {
@@ -153,4 +156,27 @@ a {
 
 .content h4 {
     font-size: 14.1px;
+    width: 365px;
+    font-weight: 400;
+    border-bottom: 3px solid var(--primary-colour);
+}
+
+#timelineRight .content p{
+    width: 335px;
+    background-color: var(--secondary-colour);
+    color:var(--primary-colour);
+    border-top: 3px solid var(--primary-colour);
+    padding: 15px;
+}
+
+#timelineLeft .content p {
+    width: 335px;
+    background-color: var(--secondary-colour);
+    color:var(--primary-colour);
+    border-top: 3px solid var(--primary-colour);
+    padding: 15px;
+}
+
+#timeline iframe {
+    border:none;
 }
