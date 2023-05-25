@@ -8,7 +8,7 @@
 
 body {
     width: 100vw;
-    height: 400vh;
+    height: 530vh;
     background-color: var(--background-colour);
     color: var(--secondary-colour);
     font-family: 'poppins', Arial;
@@ -33,6 +33,7 @@ header {
     margin-bottom: 0px;
     top: 10px;
     position: fixed;
+    position:absolute;
 }
 
 header nav ul {
@@ -124,11 +125,11 @@ a {
 
 .content {
     width: 90%;
+
 }
 
 #timelineRight .content {
     padding: 15px 0px 15px 30px;
-    
 }
 
 #timelineLeft .content {
@@ -167,6 +168,8 @@ a {
     color:var(--primary-colour);
     border-top: 3px solid var(--primary-colour);
     padding: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #timelineLeft .content p {
@@ -175,6 +178,8 @@ a {
     color:var(--primary-colour);
     border-top: 3px solid var(--primary-colour);
     padding: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #timeline iframe {
