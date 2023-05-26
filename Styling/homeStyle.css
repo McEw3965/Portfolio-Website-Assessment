@@ -236,14 +236,9 @@ header {
     visibility: hidden;
 }
 
-
-
 /*Screen3 Styling*/
 
 #screen3 {
-    /* background-image:url(../Media/phoneScreen.png); 
-    background-size:contain;
-    background-repeat:no-repeat; */
     text-align: right;
 }
 
