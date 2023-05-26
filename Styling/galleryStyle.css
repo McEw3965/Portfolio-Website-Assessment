@@ -66,6 +66,26 @@ a {
     margin-top: 210px;
 }
 
+#TTSBtn {
+    font-family:'poppins', Arial;
+    padding: 5px;
+    width: 120px;
+    height: 35px;
+    border:none;
+    border-radius: 30px;
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    position: absolute;
+    margin-right: 25px;
+    top: 3%;
+    right: 0%;
+}
+
+#TTSBtn:hover {
+    opacity: 75%;
+}
+
+
 #timelineContainer {
     height: 75%;
     width: 100%;
@@ -124,9 +144,9 @@ a {
 /*Timeline Content Styling */
 
 .content {
-    width: 90%;
+    width: 90%
+} 
 
-}
 
 #timelineRight .content {
     padding: 15px 0px 15px 30px;
@@ -149,6 +169,7 @@ a {
 .content h2 {
     font-size: 36px;
     color:var(--primary-colour);
+
 }
 
 .content h3 {

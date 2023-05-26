@@ -97,6 +97,26 @@ a {
     margin-right: 100px;
 }
 
+#TTSBtn {
+    font-family:'poppins', Arial;
+    padding: 5px;
+    width: 120px;
+    height: 35px;
+    border:none;
+    border-radius: 30px;
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    position: absolute;
+    margin-top: 25px;
+    margin-right: 25px;
+    right: 0%;
+}
+
+#TTSBtn:hover {
+    opacity: 75%;
+}
+
+
 /*Progress Bar Styling*/
 
 #skills {
@@ -157,11 +177,6 @@ a {
     width: 50%;
     height: 26px;
 }
-
-
-
-
-
 
 /* #pieChart {
     width: 300px;
