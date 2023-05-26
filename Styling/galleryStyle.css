@@ -185,3 +185,9 @@ a {
 #timeline iframe {
     border:none;
 }
+
+@media screen and (min-width: 1900px) {
+    body {
+        height: 400vh;
+    }
+}
