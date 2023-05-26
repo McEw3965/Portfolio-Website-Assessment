@@ -26,7 +26,7 @@ console.log('Before if:' + isDarkMode);
 
 if (isDarkMode != 1 & isDarkMode != 0) {
     isDarkMode = 0;
-    console.log ('isRunning');
+    console.log('isRunning');
 }
 
 function darkModeToggle() {
@@ -43,7 +43,7 @@ function darkModeToggle() {
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
 
         localStorage.removeItem('isDarkMode');
-        localStorage.setItem("isDarkMode", "1"); 
+        localStorage.setItem("isDarkMode", "1");
 
     } else if (isDarkMode === 1) {
         document.documentElement.style.setProperty('--secondary-colour', '#032539');
@@ -80,5 +80,45 @@ window.addEventListener('load', function () {
 
     darkModeCheck();
 })
+
+//Text to Speech
+
+const heading1 = document.getElementsByTagName("h1");
+
+const synth = window.speechSynthesis;
+let text = "Text to speech is working";
+
+let TTSActive = 0;
+
+function speak(text) {
+    const utterThis = new SpeechSynthesisUtterance(text);
+    synth.speak(utterThis);
+}
+
+function TTS() {
+    console.log('running');
+    const selectedText = window.getSelection().toString().trim();
+    if (selectedText !== '') {
+        speak(selectedText);
+    }
+}
+
+function activateTTS() {
+    if (TTSActive === 0) {
+        console.log('activated');
+        document.addEventListener('mouseup', TTS);
+        TTSActive = 1;
+    } else if (TTSActive === 1) {
+        console.log('deactivated');
+        document.removeEventListener('mouseup', TTS);
+        TTSActive = 0;
+    }
+}
+
+
+
+
+
+
 
 
