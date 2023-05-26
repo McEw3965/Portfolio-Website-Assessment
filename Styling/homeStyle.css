@@ -313,7 +313,6 @@ header {
 
 }
 
-
 #slide1 {
     animation-delay: 0s;
     background-image: url(../Media/spiral.png);
@@ -321,7 +320,7 @@ header {
 
 #slide2 {
     animation-delay: -10s;
-    background-image: url(../Media/bitsyScreenShot.jpg);
+    background-image: url(../Media/bitsyScreenShot.png);
 }
 
 #slide3 {
