@@ -20,11 +20,18 @@ document.addEventListener("visibilitychange", function () {
 const root = document.documentElement;
 const computedStyles = getComputedStyle(root);
 
-let isDarkMode = 1;
+isDarkMode = parseInt(localStorage.getItem("isDarkMode"));
+
+console.log('Before if:' + isDarkMode);
+
+if (isDarkMode != 1 & isDarkMode != 0) {
+    isDarkMode = 0;
+    console.log ('isRunning');
+}
 
 function darkModeToggle() {
 
-    //isDarkMode = parseInt(localStorage.getItem("isDarkMode"));
+    isDarkMode = parseInt(localStorage.getItem("isDarkMode"));
 
     console.log(isDarkMode);
 
@@ -34,9 +41,8 @@ function darkModeToggle() {
 
         const secondaryColour = computedStyles.getPropertyValue('--secondary-colour');
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
-        
-         isDarkMode = 1; 
 
+        localStorage.removeItem('isDarkMode');
         localStorage.setItem("isDarkMode", "1"); 
 
     } else if (isDarkMode === 1) {
@@ -46,24 +52,12 @@ function darkModeToggle() {
         const secondaryColour = computedStyles.getPropertyValue('--secondary-colour');
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
 
-        console.log('C' + isDarkMode);
-
-        isDarkMode = 0;
-
+        localStorage.removeItem('isDarkMode');
         localStorage.setItem("isDarkMode", "0");
     }
 }
 
 function darkModeCheck() {
-
-    isDarkMode = parseInt(localStorage.getItem("isDarkMode"));
-
-    if (!isDarkMode) {
-        console.log('Is Running');
-        isDarkMode = 1;
-    }
-
-    console.log(isDarkMode);
 
     if (isDarkMode === 1) {
         document.documentElement.style.setProperty('--secondary-colour', '#fbf3f2');
@@ -82,9 +76,9 @@ function darkModeCheck() {
     }
 }
 
-/*window.addEventListener('load', function () {
+window.addEventListener('load', function () {
 
     darkModeCheck();
-}) */
+})
 
 
