@@ -105,16 +105,13 @@ function TTS() {
 
 function activateTTS() {
     if (TTSActive === 0) {
-        console.log('activated');
         document.addEventListener('mouseup', TTS);
         TTSActive = 1;
     } else if (TTSActive === 1) {
-        console.log('deactivated');
         document.removeEventListener('mouseup', TTS);
         TTSActive = 0;
     }
 }
-
 
 
 
