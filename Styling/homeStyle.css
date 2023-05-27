@@ -1,7 +1,6 @@
 /*General Styling*/
 
-
-/*Variables to be used throughout page styling*/
+/*Variables to be used throughout page styling. Changing these variables change all elements styled with them*/
 :root {
     --primary-colour: #FA991C;
     --secondary-colour: #032539;
@@ -11,14 +10,20 @@
 
 body {
     width: 100vw;
+    /*Sets width of page to be 100% of the viewport size*/
     height: 2466px;
+    /*Height defined as 4X viewport height. 400vh used on other pages*/
     background-color: var(--background-colour);
     color: var(--secondary-colour);
     font-family: 'poppins', Arial;
+    /*Sets font. Moves down list if font is not available, making arial the default */
     font-weight: 100;
     overflow: scroll;
+    /*Allows overflowing content to be seen by scrolling*/
     overflow-x: hidden;
+    /*Hides content that overflows horizontally*/
     margin: 0;
+    /*Removes margin of page*/
 }
 
 h2 {
@@ -26,6 +31,7 @@ h2 {
     font-size: 90px;
     color: var(--primary-colour);
     line-height: 1;
+    /*Sets size between lines of text*/
 }
 
 h2 span {
@@ -39,7 +45,9 @@ article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    /*Sets dimensions of grid used to display content. 2 columns, 1 row*/
     height: 33%;
+    /*Height becomes 33% of parent element. In this case, 33% of viewport height*/
     width: 100%;
 }
 
@@ -57,23 +65,28 @@ header nav ul {
 nav ul li {
     list-style-type: none;
     display: inline-block;
+    /*Displays elements on one line*/
     text-align: center;
     transition: 0.25s ease-in-out;
+    /*Sets duration of transitions. Transitions will slow down on start and end to ease movement*/
 }
 
 nav ul li:hover {
     transform: scale(1.5);
+    /*Scales elements by 1.5X on hover*/
 }
 
 a {
     text-decoration: none;
+    /*Removes bullet points from list*/
     color: var(--primary-colour);
 }
 
-#screen2 a:hover, #screen3 a:hover {
+#screen2 a:hover,
+#screen3 a:hover {
     opacity: 75%;
-    background-color:var(--background-colour);
-    color:var(--callToActionBtn);
+    background-color: var(--background-colour);
+    color: var(--callToActionBtn);
     border: solid 3px var(--callToActionBtn);
 }
 
@@ -82,31 +95,38 @@ a {
 #screen1 {
     background-image: url(../Media/laptopScreen.png);
     background-size: 85%;
+    /*Sets size of background image*/
     background-repeat: no-repeat;
+    /*Prevents image from being repeated if space is not filled*/
     text-align: center;
 }
 
 #buttons {
     position: absolute;
+    /*Element will maintain its position depite other elements and scrolling.*/
     margin-top: 25px;
     margin-right: 25px;
     right: 0%;
+    /*Positions element. top, bottom, left, right all achieve similar affect*/
 }
 
 
-#darkMode, #TTSBtn {
-    font-family:'poppins', Arial;
+#darkMode,
+#TTSBtn {
+    font-family: 'poppins', Arial;
     padding: 5px;
+    /*Creates space between content inside button and border around button*/
     width: 130px;
     margin-left: 15px;
     height: 35px;
-    border:none;
+    border: none;
     border-radius: 30px;
     background-color: var(--primary-colour);
     color: var(--secondary-colour);
 }
 
-#darkMode:hover, #TTSBtn:hover {
+#darkMode:hover,
+#TTSBtn:hover {
     opacity: 75%;
     background-color: var(--secondary-colour);
     color: var(--primary-colour);
@@ -135,6 +155,7 @@ a {
     font-size: 34px;
     font-family: 'Great Vibes', Arial;
     letter-spacing: 3px;
+    /*Creates space between letters*/
 }
 
 br {
@@ -228,6 +249,7 @@ header {
     background-repeat: no-repeat;
     scale: 1;
     z-index: -1;
+    /*Sets position of element on z-axis. Essentially sends elements to back of page. Lower z-index means the element is further back on the page*/
     position: absolute;
 }
 
@@ -246,7 +268,7 @@ header {
 
 #screen3 #leftSide {
     background-image: url(../Media/phoneScreen.png);
-    background-size: cover;
+    background-size: cover; /*Background image covers div*/
     background-repeat: no-repeat;
 }
 
@@ -288,7 +310,7 @@ header {
 /*Slider Styling*/
 
 #screen2 #rightSide {
-    perspective: 500px;
+    perspective: 500px; /*Helps position image. Can be used to create 3D effect on images */
 }
 
 #slide1,
@@ -298,11 +320,11 @@ header {
     width: 96.8%;
     translate: 14px 32.8%;
     position: absolute;
-    animation: fade 30s infinite;
+    animation: fade 30s infinite; /*Assigns fade animation to elements. duration of 30 seconds. Continue infinitely*/
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
-    border-radius: 18px 18px 0px 0px;
+    border-radius: 18px 18px 0px 0px; /*Sets border radius of top left and top right corner*/
 
     /* Code for perspective image.
     transform: skewX(5deg) skewY(15deg);
@@ -316,7 +338,7 @@ header {
 }
 
 #slide2 {
-    animation-delay: -10s;
+    animation-delay: -10s; /*Animation will be delayed, but begin mid aniamtion due to negative delay time*/
     background-image: url(../Media/bitsyScreenShot.png);
 }
 
@@ -325,7 +347,11 @@ header {
     background-image: url(../Media/vendingMachine.png);
 }
 
+/*Animation. Translates were used for slider, changed to fade affect inside*/
+
 @keyframes fade {
+
+    /*At 0%, 28% and 100% of the total duration, opacity becomes 100%*/
 
     0%,
     28%,
@@ -335,12 +361,15 @@ header {
         animation-timing-function: ease;
     }
 
+    /*At 33% of the total duration, opacity becomes 0%*/
+
     33% {
         /*  transform: translateX(-150%);  */
         opacity: 0%;
-        visibility: hidden;
         animation-timing-function: ease;
     }
+
+    /*At 95% of total duration, opacity is set to 0% again.*/
 
     95% {
         opacity: 0%;
@@ -348,7 +377,7 @@ header {
     }
 }
 
-/*Responsive Styling*/
+/*Responsive Styling. If screen width is 1900px or higher, apply following changes*/
 
 @media screen and (min-width: 1900px) {
 
@@ -374,7 +403,7 @@ header {
     #slide3 {
         height: 52.5%;
         width: 96.3%;
-        translate: 20px 27%;
+        translate: 20px 27%; /*Moves elements. First value for horizontal, second for vertical*/
     }
 
     #phone {

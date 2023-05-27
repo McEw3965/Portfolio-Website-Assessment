@@ -44,7 +44,6 @@ nav ul li {
     text-align: left;
     transition: 0.25s ease-in-out;
     position: absolute;
-    z-index:2;
 }
 
 nav ul li:hover {
@@ -66,7 +65,7 @@ a {
     background-image:url(../Media/portfolioPicture.png);
     background-size: cover;
     margin-bottom: 0px;
-    translate: 0px -75px;
+    translate: 0px -75px; /*Moves elements 75 pixels down*/
     z-index: -1;
 }
 
@@ -158,12 +157,8 @@ a {
     transition: width 2s ease-out;
 }
 
-.progressText {
-    opacity: 0%;
-}
-
 #cPlusPlus {
-    background-color:#b04040 !important;
+    background-color:#b04040 !important; /*Important ensures styling is applied to elements*/
     width: 70%;
 }
 
@@ -185,8 +180,14 @@ a {
     height: 26px;
 }
 
+/*ProgressZero and progressText classes used for transition*/
+
 .progressZero {
     width: 0% !important;
+}
+
+.progressText {
+    opacity: 0%;
 }
 
 /*Attempt at a pie chart. Used progress bars instead*/
