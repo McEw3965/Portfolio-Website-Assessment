@@ -12,6 +12,8 @@
     <meta property="og::type" content="website">
     <meta property="og::url" content="https://mcew3965.github.io/Portfolio-Website-Assessment/Pages/index.html">
 
+    <!--Links html to google fonts api. Allows use of custom fonts-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
@@ -35,14 +37,12 @@
     <article id="screen1">
 
         <div id="buttons">
-            <button id="darkMode" onclick="darkModeToggle()">Dark Mode</button>
-            <button id="TTSBtn" onclick="activateTTS()"> Text to speech</button>
+            <button id="darkMode" onclick="darkModeToggle()">☼ Dark Mode</button>
+            <button id="TTSBtn" onclick="activateTTS()"> 🗣️ Text to speech</button>
         </div>
 
         <h1>Creative Computing <br> <span>Portfolio</span> <br> <span id="signature">Ewan McCarney</span>
-        </h1>
-
-        <p><i class="arrow down"></i></p>
+        </h1> <!--Spans and br used to create sections of h1 without reusing tag-->
 
     </article>
 
@@ -52,13 +52,13 @@
             <h2>Projects to Date <br> <span>My Gallery</span> <span id="modules"> <br> CodeLab <br> Digital Storytelling
                     <br> Image, Sound and Code</span></h2>
 
-            <a href="../Pages/gallery.html">Go To Gallery</a>
+            <a href="../Pages/gallery.html">Go To Gallery</a> <!--Anchor tag linking to gallery page-->
 
         </div>
 
         <div id="rightSide">
 
-            <div id="monitor" role="img" aria-label="A silouhette of a computer monitor">
+            <div id="monitor" role="img" aria-label="A silouhette of a computer monitor"> <!--Aria labels imporve accessibility of divs with background images-->
 
                 <div id="slide1" role="img" aria-label="Bitsy game created as part of first semester">
                 </div>
@@ -86,49 +86,9 @@
             <h2>About Me <br><span>Learn More</span></h2>
         </div>
 
-
-        <!--Old Article Format-->
-
-        <!--
-
-        <div class="columns">
-
-            <div class="panelInfo">
-
-                <h3>Digital Storytelling</h3>
-
-                <button>Go</button>
-            </div>
-
-        </div>
-
-        <div class="columns">
-
-            <div class="panelInfo">
-
-                <h3>CODELAB I</h3>
-
-                <button>Go</button>
-            </div>
-
-        </div>
-
-        <div class="columns">
-
-            <div class="panelInfo">
-
-                <h3>Image, Sound and Code</h3>
-
-                <button>Go</button>
-            </div>
-
-        </div>
-    -->
-
     </article>
 
-
-    <script src="../index.js"></script>
+    <script src="../Javascript/index.js"></script> <!--Links to javascript files-->
 </body>
 
 </html>
