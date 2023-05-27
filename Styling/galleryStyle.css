@@ -69,7 +69,7 @@ a {
 #TTSBtn {
     font-family:'poppins', Arial;
     padding: 5px;
-    width: 120px;
+    width: 130px;
     height: 35px;
     border:none;
     border-radius: 30px;
@@ -83,8 +83,9 @@ a {
 
 #TTSBtn:hover {
     opacity: 75%;
+    background-color:var(--secondary-colour);
+    color:var(--primary-colour);
 }
-
 
 #timelineContainer {
     height: 75%;
@@ -185,8 +186,6 @@ a {
 
 #timelineRight .content p{
     width: 335px;
-    background-color: var(--secondary-colour);
-    color:var(--primary-colour);
     border-top: 3px solid var(--primary-colour);
     padding: 15px;
     border-bottom-left-radius: 30px;
@@ -195,12 +194,11 @@ a {
 
 #timelineLeft .content p {
     width: 335px;
-    background-color: var(--secondary-colour);
-    color:var(--primary-colour);
     border-top: 3px solid var(--primary-colour);
     padding: 15px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    text-align: left;
 }
 
 #timeline iframe {
