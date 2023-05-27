@@ -42,6 +42,8 @@ function darkModeToggle() {
         const secondaryColour = computedStyles.getPropertyValue('--secondary-colour');
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
 
+        document.getElementById("darkMode").innerHTML = "☼ Light Mode";
+
         localStorage.removeItem('isDarkMode');
         localStorage.setItem("isDarkMode", "1");
 
@@ -51,6 +53,8 @@ function darkModeToggle() {
 
         const secondaryColour = computedStyles.getPropertyValue('--secondary-colour');
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
+
+        document.getElementById("darkMode").innerHTML = "☼ Dark Mode";
 
         localStorage.removeItem('isDarkMode');
         localStorage.setItem("isDarkMode", "0");
@@ -66,12 +70,16 @@ function darkModeCheck() {
         const secondaryColour = computedStyles.getPropertyValue('--secondary-colour');
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
 
+        document.getElementById("darkMode").innerHTML = "☼ Light Mode";
+
     } else if (isDarkMode === 0) {
         document.documentElement.style.setProperty('--secondary-colour', '#032539');
         document.documentElement.style.setProperty('--background-colour', '#fbf3f2');
 
         const secondaryColour = computedStyles.getPropertyValue('--secondary-colour');
         const backgroundColour = computedStyles.getPropertyValue('--background-colour');
+
+        document.getElementById("darkMode").innerHTML = "☼ Dark Mode";
 
     }
 }
