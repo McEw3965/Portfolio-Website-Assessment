@@ -74,8 +74,6 @@ window.addEventListener('load', function () { //Triggers function when window lo
 
 //Text to Speech
 
-const heading1 = document.getElementsByTagName("h1"); //Defines heading1 variable
-
 const synth = window.speechSynthesis; //Creates synth variable
 
 let TTSActive = 0; //Creates variable for toggle
