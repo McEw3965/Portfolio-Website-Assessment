@@ -279,6 +279,10 @@ header {
     margin-top: 35%;
 }
 
+#screen3 h2 span {
+    font-size: 34px;
+}
+
 #phone {
     background-image: url(../Media/portfolioPicture.png);
     background-repeat: no-repeat;
